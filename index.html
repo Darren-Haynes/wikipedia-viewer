@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wikipedia Viewer</title>
+</head>
+
+<body>
+
+  <div class="container row">
+
+    <div class="column third">
+      <h1 class="heading">Wiki Viewer</h1>
+
+      <div class="backdrop">
+        <div class="screen">
+          <input type="text" name="search"></input>
+          <div class="cursor"></div>
+        </div>
+
+        <div class="buttons">
+          <button>Search</button>
+          <button>Random</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column two-thirds">
+      <p>Elements with position:relative are positioned relative to themselves. This may sound strange, but it can be useful sometimes. If we specify a value for either of the four edge properties, the relatively positioned element is shifted in relation
+        to the position it would have occupied if it had been statically positioned. This may sound like Greek to you, but it's actually quite logical. If we just set position:relative on an element, without specifying any of the edge properties, the
+        element ends up exactly where it would have been if we had set position:static, or if we hadn't set position at all. If we set top:10px, the element is shifted 10 pixels from its original top edge. That means it moves downward. A negative value
+        shifts the element in the opposite direction, so we could achieve the exact same result by setting bottom:-10px. This means it's not meaningful to specify both top and bottom, or both left and right. There may, however, be reasons for specifying,
+        for instance, top and left together, if we want to shift an element both vertically and horizontally. Now, this isn't very useful for creating columns, because a relatively positioned element remains in the document flow – in the position where
+        it originally was. It still takes up space, but not where it's actually shown, but where it would have been shown, had it been statically positioned.</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+  
+</body>
+</html>

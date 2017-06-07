@@ -1,0 +1,165 @@
+html,
+body {
+	height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p {
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin: 0 auto;
+  color: silver;
+  background-color: rgba(83, 70, 54, 0.97);
+  border-radius: 5%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.row::before,
+.row::after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+.column {
+	float: left;
+}
+
+.third,
+.two-thirds {
+	width: 100%;
+	height: auto;
+}
+
+.third {
+	background: url("https://s19.postimg.org/oksdqn0er/binary-code-black-green.jpg") no-repeat center center black;
+}
+
+.two-thirds {
+	background-color: grey;
+}
+
+.backdrop {
+  position: relative; 
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(83, 70, 54, 0.97);
+  border-radius: 5%;
+  box-shadow: inset 0 0 0 4px #3B3228;
+}
+
+.screen {
+  position: relative;
+  margin: 0 auto;
+  top: 2.6rem;
+  background: linear-gradient(
+  to bottom,
+  #5d9634,
+  #5d9634 50%,
+  #538c2b 50%,
+  #538c2b
+);
+  background-size: 100% 20px;
+  width: 78%;
+  height: 40%;
+  border-radius: 5px;
+  box-shadow: 
+    0 0 0 10px #2B3125,
+    0 0 0 14px #5F5F5D,
+    0 0 0 25px #CBCBC9,
+    0 0 0 29px #EDEDEB,
+    0 0 0 34px #51544D
+}
+
+input {
+	position: absolute;
+	background: transparent;
+	top: 75%;
+	height: 20%;
+	width: 100%;
+	font-size: 2rem;
+	border: 0 solid transparent;
+} 
+
+
+.cursor {
+  position: absolute;
+  top: 92%;
+  left: 1%;
+  width: 15px;
+  height: 0;
+  z-index: 1;
+  -webkit-animation: blink 1s infinite; /* Safari 4+ */
+  -moz-animation:    blink 1s infinite; /* Fx 5+ */
+  -o-animation:      blink 1s infinite; /* Opera 12+ */
+  animation:         blink 1s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes blink {
+0%, 49% {
+    border: 1px solid transparent;
+  }
+50%, 100% {
+    border: 1px solid white;
+  }
+}
+
+.buttons {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  border: 0;
+  background: #BCC6CC;
+  border-radius: 20px;
+  box-shadow: 0 5px 0 black;
+  color: green;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.5rem;
+  margin: 0;
+  outline: 0;
+  padding: 4% 15%;
+  transition: all .1s linear;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+	
+@media screen and (min-width: 800px) {
+  /* Desktop styles go here */
+  .third {
+    width: calc(100% / 3);
+	height: 100%;
+  }
+
+  .two-thirds {
+	  width: calc(100% /3 * 2);
+	  height: 100%;
+	  border: 1px solid tomato;
+  }
+}
