@@ -1,4 +1,4 @@
-
+<!--<script src='http://127.0.0.1:9001/js/socket.js'></script>-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,21 +12,24 @@
 
 <body>
 
-  <div class="container row">
+  <div class="container">
 
     <div class="column third">
+
       <h1 class="heading">Wiki Viewer</h1>
 
       <div class="backdrop">
-        <div class="screen">
-          <input type="text" name="search"></input>
+         <div class="screen">
+          <input type="text" name="search">
           <div class="cursor"></div>
-        </div>
+         </div>
 
-        <div class="buttons">
+         <div class="buttons">
           <button>Search</button>
-          <button>Random</button>
-        </div>
+         </div>
+         <div class="buttons">
+          <button id="random_button">Random</button>
+         </div>
 
       </div>
     </div>
@@ -42,11 +45,5 @@
 
   </div>
 
-</body>
-
-</html>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-
-  
 </body>
 </html>

@@ -45,7 +45,21 @@ p {
 .third,
 .two-thirds {
 	width: 100%;
-	height: auto;
+	height: 100%;
+}
+
+@media screen and (min-width: 1050px) {
+  /* Desktop Column Sizes */
+  .third {
+    width: calc(100% / 3);
+	  height: 100%;
+  }
+
+  .two-thirds {
+	  width: calc(100% /3 * 2);
+	  height: 100%;
+	  border: 1px solid tomato;
+  }
 }
 
 .third {
@@ -57,10 +71,10 @@ p {
 }
 
 .backdrop {
-  position: relative; 
+  position: relative;
   margin: 0 auto;
-  margin-top: 5%;
-  width: 80%;
+  margin-top: 1.5rem;
+  width: 90%;
   height: 80%;
   background-color: rgba(83, 70, 54, 0.97);
   border-radius: 5%;
@@ -70,7 +84,9 @@ p {
 .screen {
   position: relative;
   margin: 0 auto;
-  top: 2.6rem;
+  top: 3rem;
+  margin-bottom: 7rem;
+
   background: linear-gradient(
   to bottom,
   #5d9634,
@@ -82,12 +98,25 @@ p {
   width: 78%;
   height: 40%;
   border-radius: 5px;
-  box-shadow: 
+  box-shadow:
     0 0 0 10px #2B3125,
     0 0 0 14px #5F5F5D,
     0 0 0 25px #CBCBC9,
     0 0 0 29px #EDEDEB,
     0 0 0 34px #51544D
+}
+
+
+@media screen and (min-width: 600px) {
+  .screen {
+    margin-bottom: 9rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .screen {
+    margin-bottom: 9rem;
+  }
 }
 
 input {
@@ -98,7 +127,7 @@ input {
 	width: 100%;
 	font-size: 2rem;
 	border: 0 solid transparent;
-} 
+}
 
 
 .cursor {
@@ -124,13 +153,13 @@ input {
 }
 
 .buttons {
-  position: relative;
   text-align: center;
   margin: 0 auto;
 }
 
 button {
   border: 0;
+  position: relative;
   background: #BCC6CC;
   border-radius: 20px;
   box-shadow: 0 5px 0 black;
@@ -144,22 +173,28 @@ button {
   transition: all .1s linear;
 }
 
+
 button:active {
+  border: 0;
   box-shadow: 0 2px 0 #006599;
   transform: translateY(3px);
 }
 
-	
-@media screen and (min-width: 800px) {
-  /* Desktop styles go here */
-  .third {
-    width: calc(100% / 3);
-	height: 100%;
-  }
-
-  .two-thirds {
-	  width: calc(100% /3 * 2);
-	  height: 100%;
-	  border: 1px solid tomato;
-  }
+#random_button {
+  margin-top: 2rem;
 }
+
+/*@media screen and (min-width: 600px) {*/
+  /*[> Desktop Column Sizes <]*/
+  /*.buttons {*/
+    /*[>display: block;<]*/
+    /*float: left;*/
+    /*margin-top: 10%;*/
+    /*margin-left: 33.3%;*/
+  /*}*/
+  /*button {*/
+    /*[>margin: 0 auto;<]*/
+  /*}*/
+  /*#button-random {*/
+    /*[>clear: left;<]*/
+/*}*/
